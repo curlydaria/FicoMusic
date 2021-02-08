@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Lato;
+  }
+.sifonn {
+  font-family: Sifonn;
+  text-shadow: 2px 2px #51ABB2;
+}
+.view {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+
+}
+
+.muzieknootjes {
+  background-image: url(../img/62236.png), url(../img/blobs.png);
+  background-position: center bottom, left top;
+  background-repeat: no-repeat, no-repeat;
+  display: block;
+  margin-left: 0;
+  position: relative;
+  width: 50vw;
+  height: 70vh;
+  border: 0px solid #000;
+}
+@media screen and (max-width: 1000px) {
+  .muzieknootjes {
+    display: none;
+  }
+}
+
+.noot-1,
+.noot-2,
+.noot-3,
+.noot-4 {
+  position: absolute;
+  animation: notes 2s infinite linear;
+  font-size: 14px;
+  opacity: 0;
+}
+
+.noot-1 {
+  top: 60px;
+  left: 0;
+  animation-delay: 0.5s;
+}
+
+.noot-2 {
+  top: 30px;
+  left: 30%;
+  animation-delay: 1s;
+}
+
+.noot-3 {
+  top: 90px;
+  left: 60%;
+  animation-delay: 1.5s;
+}
+
+.noot-4 {
+  top: 40px;
+  left: 90%;
+  animation-delay: 2s;
+}
+
+@keyframes notes {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5) translate(50%, -50%);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(1.5) translate(100%, -100%);
+  }
+  100% {
+    transform: scale(1.5) translate(100%, -100%);
+    opacity: 0;
+  }
+}
+/* Change the color of links on hover */
+a.nav-link:hover {
+  background-color: white;
+}
+#logo {
+	width: 150px;
+  margin-left: 1em;
+}
+.foto {
+  border-radius: 200px 800px 80px;
+}
+.bgColor{
+  background-image: url(../img/blobs.png);
+  background-position: -60% 60%;
+  background-repeat: no-repeat;
+}
+.bgColor:before {
+    position: absolute;
+    content: "";
+    top: -27px;
+    background-color: #F0DFC8;
+    width: 30vw;
+    left:0 ;
+    height: 20vh;
+    z-index: -2;
+}
+.card1 {
+  background-color: #F0DFC8;
+  border-radius: 100px 500px 80px;
+  padding: 2em;
+}
+.card2 {
+  background-color: #F0DFC8;
+  border-radius: 1300px 500px 1600px;
+  padding: 2em;
+}
+.card3 {
+  background-color: #F0DFC8;
+  border-radius: 100px 500px 80px;
+  padding: 2em;
+}
+.skewed {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #F0DFC8; 
+  z-index: -2;
+  transform: skewY(6deg);
+  transform-origin: top right;
+}
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #8A6131;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #FFEACE;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+#Clases {
+	background-image: url(../img/musicnotes.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+a.button {
+	background-color: #51ABB2;
+	color: white;
+	display: block;
+	padding: 1em;
+	width: 150px;
+	text-decoration: none;
+	font-size: 17px;
+	text-align: center;
+}
+.button:hover {
+	background-color: white;
+  color: #8A6131;
+}
+i {
+  font-size: 2em;
+}
+footer {
+  background-color: #8A6131;
+  padding: 3em;
+}
+a{
+  color: #51ABB2;
+}
+a:hover {
+  text-decoration: none;
+}
+#Videos {
+  padding: 3em;
+  background-image: url(../img/blobs.png);
+  background-position: center;
+}
+iframe {
+  padding: 1em;
+}
+@media screen and (max-width: 600px) {
+  iframe {
+    width: 300px;
+  }
+}
