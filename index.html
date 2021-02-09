@@ -173,9 +173,9 @@
       <img src="img/sonriendo.jpeg" style="width:50vw">
     </div>
     <div class="column">
-      <form action="/action_page.php" id="contactForm">
-        <label for="fname">Nombre</label>
-        <input type="text" id="fname" name="firstname" placeholder="Tu nombre..">
+      <form method="post" action="form-to-email.php" id="contactForm">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre..">
         <label for="email">Email</label>
         <input type="text" id="email" name="email" placeholder="Tu email..">
         <label for="phone">Teléfono</label>
@@ -186,9 +186,19 @@
           <option value="canada">Argentina</option>
           <option value="usa">Otro</option>
         </select>
-        <label for="subject">Tu consulta</label>
-        <textarea id="subject" name="subject" placeholder="Escribe tu consulta.." style="height:170px"></textarea>
-        <input type="submit" value="Enviar">
+        <div>
+  <p>¿Tenés conocimientos previos?</p>
+  <form>
+    <label class="radio-inline">
+      <input type="radio" name="optradio" checked>Si
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">No
+    </label>
+</div>
+        <label for="message">Tu consulta</label>
+        <textarea id="message" name="message" placeholder="Escribe tu consulta.." style="height:170px"></textarea>
+        <input type="submit" value="Enviar" name="submit">
       </form>
       <div class="p-5">
       <h3 class="mt-5">Redes sociales</h3>
