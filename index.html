@@ -173,7 +173,7 @@
       <img src="img/sonriendo.jpeg" style="width:50vw">
     </div>
     <div class="column">
-      <form method="post" action="form-to-email.php" id="contactForm">
+      <form method="post" action="form-to-email.php" id="form-to-email">
         <label for="name">Nombre</label>
         <input type="text" id="name" name="name" placeholder="Tu nombre..">
         <label for="email">Email</label>
@@ -182,9 +182,9 @@
         <input type="text" id="phone" name="phone" placeholder="+()111-1111..">
         <label for="country">País</label>
         <select id="country" name="country">
-          <option value="australia">Uruguay</option>
-          <option value="canada">Argentina</option>
-          <option value="usa">Otro</option>
+          <option value="uruguay">Uruguay</option>
+          <option value="argentina">Argentina</option>
+          <option value="otro">Otro</option>
         </select>
         <div>
   <p>¿Tenés conocimientos previos?</p>
@@ -225,6 +225,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script>
   AOS.init();
+</script>
+<script language="JavaScript">
+// Code for validating the form
+// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+// for details
+var frmvalidator  = new Validator("myemailform");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
 </script>
 </body>
 </html>
