@@ -8,7 +8,7 @@ $name = $_POST['name'];
 $visitor_email = $_POST['email'];
 $phone = $_POST['phone'];
 $country = $_POST['country'];
-$optradio = $_POST['optradio'];
+$preknow = $_POST['preknow'];
 $message = $_POST['message'];
 
 
@@ -27,10 +27,10 @@ if(IsInjected($visitor_email))
 
 $email_from = 'sol@virtualhelp.com.ar';//<== update the email address
 $email_subject = "New Form submission";
-$email_body = "You have received a new message from the user $name.\n".
-    "Here is the message:\n $message".
+$email_body = "You have received a new message from the user: $name.\n".
+    "Este es el mensaje:\n $message. Este es el teléfono:\n $phone. Este es el mail: \n $visitor_email. Este es el pais: \n $country. Conocimientos previos:\n $preknow.  ".
     
-$to = "soldebenedet@gmail.com";//<== update the email address
+$to = "federicoc14a@gmail.com";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!

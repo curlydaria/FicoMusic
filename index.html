@@ -186,16 +186,12 @@
           <option value="argentina">Argentina</option>
           <option value="otro">Otro</option>
         </select>
-        <div>
-  <p>¿Tenés conocimientos previos?</p>
-  <form>
-    <label class="radio-inline">
-      <input type="radio" name="optradio" checked>Si
-    </label>
-    <label class="radio-inline">
-      <input type="radio" name="optradio">No
-    </label>
-</div>
+        <label for="preknow">¿Tenés conocimientos previos?</label>
+        <select id="preknow" name="preknow">
+          <option value="yes">No</option>
+          <option value="no">Si</option>
+        </select>
+        
         <label for="message">Tu consulta</label>
         <textarea id="message" name="message" placeholder="Escribe tu consulta.." style="height:170px"></textarea>
         <input type="submit" value="Enviar" name="submit">
@@ -214,6 +210,7 @@
   </div>
   </div>
 </section>
+
 <footer>
   <div class="row font-small">
 		<p class="text-center">Diseñado y desarrollado por <a href="https://virtualhelp.com.ar/">Virtual Help</a></p>
